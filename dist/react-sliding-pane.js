@@ -6,7 +6,7 @@ var CLOSE_TIMEOUT = 500;
 function ReactSlidingPane(_ref) {
   var isOpen = _ref.isOpen,
     title = _ref.title,
-    subtitle = _ref.subtitle,
+    // subtitle = _ref.subtitle,
     onRequestClose = _ref.onRequestClose,
     onAfterOpen = _ref.onAfterOpen,
     children = _ref.children,
