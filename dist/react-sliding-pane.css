@@ -68,7 +68,6 @@
 .slide-pane__header {
   display: flex;
   flex: 0 0 64px;
-  justify-content: flex-end;
   align-items: center;
   height: 64px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);

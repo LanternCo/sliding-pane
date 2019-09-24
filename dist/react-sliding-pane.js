@@ -14,8 +14,7 @@ function ReactSlidingPane(_ref) {
     overlayClassName = _ref.overlayClassName,
     closeIcon = _ref.closeIcon,
     _ref$from = _ref.from,
-    from = _ref$from === void 0 ? "right" : _ref$from,
-    width = _ref.width;
+    from = _ref$from === void 0 ? "right" : _ref$from;
   var directionClass = "slide-pane_from_".concat(from);
   return React.createElement(
     Modal,
@@ -23,11 +22,6 @@ function ReactSlidingPane(_ref) {
       className: "slide-pane "
         .concat(directionClass, " ")
         .concat(className || ""),
-      style: {
-        content: {
-          width: width || "80%"
-        }
-      },
       overlayClassName: "slide-pane__overlay ".concat(overlayClassName || ""),
       closeTimeoutMS: CLOSE_TIMEOUT,
       isOpen: isOpen,
@@ -48,26 +42,6 @@ function ReactSlidingPane(_ref) {
         },
         closeIcon ? closeIcon : React.createElement(IconClose, null)
       )
-      // React.createElement(
-      //   "div",
-      //   {
-      //     className: "slide-pane__title-wrapper"
-      //   },
-      //   React.createElement(
-      //     "h2",
-      //     {
-      //       className: "slide-pane__title"
-      //     },
-      //     title
-      //   ),
-      //   React.createElement(
-      //     "div",
-      //     {
-      //       className: "slide-pane__subtitle"
-      //     },
-      //     subtitle
-      //   )
-      // )
     ),
     React.createElement(
       "div",
