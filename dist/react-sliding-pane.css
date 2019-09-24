@@ -7,7 +7,15 @@
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.5s;
   will-change: transform;
+  width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+  .slide-pane {
+    width: 50%;
+  }
+}
+
 .slide-pane:focus {
   outline-style: none;
 }
