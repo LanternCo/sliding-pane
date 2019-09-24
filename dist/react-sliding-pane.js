@@ -11,7 +11,6 @@ function ReactSlidingPane(_ref) {
       children = _ref.children,
       className = _ref.className,
       overlayClassName = _ref.overlayClassName,
-      closeIcon = _ref.closeIcon,
       _ref$from = _ref.from,
       from = _ref$from === void 0 ? "right" : _ref$from;
   var directionClass = "slide-pane_from_".concat(from);
@@ -24,11 +23,6 @@ function ReactSlidingPane(_ref) {
     onRequestClose: onRequestClose,
     contentLabel: "Modal \"".concat(title || "", "\"")
   }, React.createElement("div", {
-    className: "slide-pane__header"
-  }, React.createElement("div", {
-    className: "slide-pane__close",
-    onClick: onRequestClose
-  }, closeIcon ? closeIcon : React.createElement(IconClose, null))), React.createElement("div", {
     className: "slide-pane__content"
   }, children));
 }
@@ -45,16 +39,5 @@ ReactSlidingPane.propTypes = {
   width: PropTypes.string,
   closeIcon: PropTypes.any
 };
-
-function IconClose() {
-  return React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 13 22"
-  }, React.createElement("path", {
-    fill: "currentColor",
-    fillRule: "evenodd",
-    d: "M4 11l8 8c.6.5.6 1.5 0 2-.5.6-1.5.6-2 0l-9-9c-.6-.5-.6-1.5 0-2l9-9c.5-.6 1.5-.6 2 0 .6.5.6 1.5 0 2l-8 8z"
-  }));
-}
 
 export default ReactSlidingPane;
