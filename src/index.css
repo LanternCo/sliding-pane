@@ -101,7 +101,7 @@
 }
 .slide-pane__content {
   position: relative;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   /* padding: 24px 32px; */
   flex: 1 1 auto;
 }
